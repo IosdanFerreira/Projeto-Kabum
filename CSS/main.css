@@ -4,7 +4,7 @@ body{
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: ;
+    font-family: 'Poppins';
 }
 
 .pg-topo{
@@ -42,10 +42,11 @@ body{
 .pg-topo>.cabecalho>.busca-cabecalho{
     margin-top: 37px;
     float: left;
+    width: 680px;
 }
 .pg-topo>.cabecalho>.busca-cabecalho>.txt-busca{
     height: 16px;
-    width: 500px;
+    width: 71%;
     border-radius: 5px;
     padding: 10px;
     padding-left: 15px;
@@ -53,11 +54,10 @@ body{
     float: left;
     font-size: 15px;
 }
-.pg-topo>.cabecalho>.busca-cabecalho>.botao>{
-    position: absolute;
-    float: left;
-    width: 80px;
-    background-color:#0060B1;
-    display: inline-block;
 
+.pg-topo>.cabecalho>.busca-cabecalho>.botao>.seta{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
 }
