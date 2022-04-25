@@ -4,7 +4,7 @@ body{
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
 .pg-topo{
@@ -42,11 +42,11 @@ body{
 .pg-topo>.cabecalho>.busca-cabecalho{
     margin-top: 37px;
     float: left;
-    width: 680px;
+    width: 482px;
 }
 .pg-topo>.cabecalho>.busca-cabecalho>.txt-busca{
     height: 16px;
-    width: 71%;
+    width: 100%;
     border-radius: 5px;
     padding: 10px;
     padding-left: 15px;
@@ -55,9 +55,40 @@ body{
     font-size: 15px;
 }
 
-.pg-topo>.cabecalho>.busca-cabecalho>.botao>.seta{
+.pg-topo>.cabecalho>.busca-cabecalho>.seta{
     position: absolute;
     background-color: transparent;
     border: none;
     padding: 0px;
+    right: 490px;
+    top: 32.6px;
+
+}
+.pg-topo>.cabecalho>.avatar-usuario{
+    float: left;
+    margin-top: 37px;
+    margin-left: 117px;
+}
+.pg-topo>.cabecalho>.avatar-usuario>img{
+    width: 35px;
+    height: 32px;
+}
+
+.pg-topo>.cabecalho>.login-cadastro{
+    float: left;
+    margin-left: 8px;
+    margin-top: 39px;
+    font-size: 15px;
+    color: #d1d1d1;
+}
+
+.pg-topo>.cabecalho>.login-cadastro>.login>a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #d1d1d1;
+}
+.pg-topo>.cabecalho>.login-cadastro>.cadastro>a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #d1d1d1;
 }
