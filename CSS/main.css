@@ -9,7 +9,7 @@ body{
     border: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #A61B06;
-    overflow-x: hidden;
+    
 }
 .pg-topo{
     background-color: #0060B1;
@@ -124,7 +124,6 @@ body{
     margin-left: 40px;
 }
 .menu{
-    position: absolute;
     background-color: #FF6500;
     margin: 0px;
     height: 38px;
@@ -178,27 +177,30 @@ body{
     margin-left: 39px;
     color: white;
 }
-.banner>img{
-    position: absolute;
-    margin-top: 38px;
+.img-banner{
+    float: left;
+    margin-bottom: -262px;
+}
+.img-banner>a>.banner{
     margin-bottom: 0px;
     width: 100%;
-    z-index: 0;
+    z-index: 2;
 }
 section>.conteudo{
-    position: absolute;
-    top: 458px;
-    left: 15px;
-    width: 197vh;
-    height: 100vh;
+    width: 198vh;
+    margin-left: 2vh;
+    margin-right: 3vh;
+    margin-top: -5px;
     background-color: white;
-    z-index: 1;
+    z-index: 2;
+    float: left;
 }
 .conteudo>.header-conteudo{
     display: block;
     background-color: #FF6500;
-    width: 197vh;
+    width: 100%;
     height: 69px;
+    float: left;
 }
 .conteudo>.header-conteudo>.txt-header-conteudo{
     float: left;
@@ -219,18 +221,18 @@ section>.conteudo{
 .produtos{
     margin: auto;
     margin-top: 36px;
-    margin-left: 71px;
+    margin-left: 11vh;
     display: inline-block;
-    width: 170vh;
+    width: 179vh;
     height: 59vh;
 }
 .produtos>.produto-1{
     display: inline-block;
     height: 58.5vh;
-    width: 18.7%;
+    width: 18%;
 }
 .produtos>.produto-1:hover{
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.233);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.363);
     border-radius: 3px;
 }
 .produtos>.produto-1>.desconto-1{
@@ -355,28 +357,516 @@ section>.conteudo{
 .produtos>.produto-2{
     display: inline-block;
     margin-left: 11px;
-    border: 1px solid black;
     height: 58.5vh;
-    width: 18.7%;
+    width: 19%;
+}
+.produtos>.produto-2:hover{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.363);
+    border-radius: 3px;
+}
+.produtos>.produto-2>.desconto-2{
+    float: left;
+    margin-left: 7px;
+    border-radius: 3px;
+    background-color: #FF6500;
+    height: 40px;
+    width: 40px;
+}
+.produtos>.produto-2>.desconto-2>.txt-desconto-2{
+    margin-left: 7px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+.produtos>.produto-2>.desconto-2>svg{
+    margin-left: 12px;
+    margin-top: -1px;
+    float: left;
+}
+.produtos>.produto-2>.unidades-2{
+    float: left;
+    margin-left: 7px;
+    border: 1px solid #FF6500;
+    border-radius: 3px;
+    height: 40px;
+    width: 40px;
+    font-size: 10px;
+}
+.produtos>.produto-2>.unidades-2>small{
+    float: left;
+    text-align: center;
+    margin-left: 5px;
+    height: 10px;
+    color: #FF6500;
+    font-weight: 500;
+}
+.produtos>.produto-2>.unidades-2>.small-2{
+    float: left;
+    text-align: center;
+    margin-left: 11px;
+    margin-top: 4px;
+    height: 10px;
+    color: #FF6500;
+    font-weight: 500;
+}
+.produtos>.produto-2>.unidades-2>span{
+    float: left;
+    text-align: center;
+    margin-left: 12px;
+    height: 10px;
+    color: #FF6500;
+    font-weight: bold;
+    font-size: 11px;
+}
+.produtos>.produto-2>.item-2>img{
+    float: left;
+    margin-left: 40px;
+    margin-top: 9px;
+    width: 131px;
+}
+.produtos>.produto-2>.item-2>.txt-produto-2{
+    float: left;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 7px;
+    margin-left: 15px;
+    width: 170px;
+    color: rgb(70, 70, 70);
+}
+.produtos>.produto-2>.item-2>.preço-de{
+    float: left;
+    color: rgba(70, 70, 70, 0.753);
+    margin-left: 15px;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+.produtos>.produto-2>.item-2>.preço-por{
+    float: left;
+    margin-left: 15px;
+    margin-right: 20px;
+    color: #FF6500;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+.produtos>.produto-2>.item-2>.pix{
+    float: left;
+    color: rgba(70, 70, 70, 0.753);
+    margin-left: 15px;
+    font-size: 12px;
+}
+.produtos>.produto-2>.botao-produtos{
+    float: left;
+    border: 1px solid #FF6500;
+    width: 227px;
+    height: 35px;
+    margin-top: 35px; 
+    border-radius: 3px;
+    background-color: white;
+}
+.produtos>.produto-2>.botao-produtos>.botao-relogio{
+    float: left;
+    margin-top: -1px;
+    margin-left: -7px;
+    background-color: #FF6500;
+    width: 66px;
+    height: 34px;
+    border-radius: 3px 0px 0px 3px;
+}
+.produtos>.produto-2>.botao-produtos>.botao-relogio>svg{
+    margin-top: 5px;
+}
+.produtos>.produto-2>.botao-produtos>small{
+    float: left;
+    color: #FF6500;
+    font-size: 9px;
+    margin-left: 31px;
+    margin-top: 5px;
 }
 .produtos>.produto-3{
     display: inline-block;
     margin-left: 11px;
-    border: 1px solid black;
     height: 58.5vh;
-    width: 18.7%;
+    width: 19%;
+}
+.produtos>.produto-3:hover{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.363);
+    border-radius: 3px;
+}
+.produtos>.produto-3>.desconto-3{
+    float: left;
+    margin-left: 7px;
+    border-radius: 3px;
+    background-color: #FF6500;
+    height: 40px;
+    width: 40px;
+}
+.produtos>.produto-3>.desconto-3>.txt-desconto-3{
+    margin-left: 7px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+.produtos>.produto-3>.desconto-3>svg{
+    margin-left: 12px;
+    margin-top: -1px;
+    float: left;
+}
+.produtos>.produto-3>.unidades-3{
+    float: left;
+    margin-left: 7px;
+    border: 1px solid #FF6500;
+    border-radius: 3px;
+    height: 40px;
+    width: 40px;
+    font-size: 10px;
+}
+.produtos>.produto-3>.unidades-3>small{
+    float: left;
+    text-align: center;
+    margin-left: 5px;
+    height: 10px;
+    color: #FF6500;
+    font-weight: 500;
+}
+.produtos>.produto-3>.unidades-3>.small-2{
+    float: left;
+    text-align: center;
+    margin-left: 11px;
+    margin-top: 4px;
+    height: 10px;
+    color: #FF6500;
+    font-weight: 500;
+}
+.produtos>.produto-3>.unidades-3>span{
+    float: left;
+    text-align: center;
+    margin-left: 12px;
+    height: 10px;
+    color: #FF6500;
+    font-weight: bold;
+    font-size: 11px;
+}
+.produtos>.produto-3>.item-3>img{
+    float: left;
+    margin-left: 40px;
+    margin-top: 9px;
+    width: 131px;
+}
+.produtos>.produto-3>.item-3>.txt-produto-3{
+    float: left;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 7px;
+    margin-left: 15px;
+    width: 170px;
+    color: rgb(70, 70, 70);
+}
+.produtos>.produto-3>.item-3>.preço-de{
+    float: left;
+    color: rgba(70, 70, 70, 0.753);
+    margin-left: 15px;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+.produtos>.produto-3>.item-3>.preço-por{
+    float: left;
+    margin-left: 15px;
+    margin-right: 20px;
+    color: #FF6500;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+.produtos>.produto-3>.item-3>.pix{
+    float: left;
+    color: rgba(70, 70, 70, 0.753);
+    margin-left: 15px;
+    font-size: 12px;
+}
+.produtos>.produto-3>.botao-produtos{
+    float: left;
+    border: 1px solid #FF6500;
+    width: 227px;
+    height: 35px;
+    margin-top: 34px; 
+    border-radius: 3px;
+    background-color: white;
+}
+.produtos>.produto-3>.botao-produtos>.botao-relogio{
+    float: left;
+    margin-top: -1px;
+    margin-left: -7px;
+    background-color: #FF6500;
+    width: 66px;
+    height: 34px;
+    border-radius: 3px 0px 0px 3px;
+}
+.produtos>.produto-3>.botao-produtos>.botao-relogio>svg{
+    margin-top: 5px;
+}
+.produtos>.produto-3>.botao-produtos>small{
+    float: left;
+    color: #FF6500;
+    font-size: 9px;
+    margin-left: 31px;
+    margin-top: 5px;
 }
 .produtos>.produto-4{
     display: inline-block;
     margin-left: 11px;
-    border: 1px solid black;
     height: 58.5vh;
-    width: 18.7%;
+    width: 19%;
+}
+.produtos>.produto-4:hover{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.363);
+    border-radius: 3px;
+}
+.produtos>.produto-4>.desconto-4{
+    float: left;
+    margin-left: 7px;
+    border-radius: 3px;
+    background-color: #FF6500;
+    height: 40px;
+    width: 40px;
+}
+.produtos>.produto-4>.desconto-4>.txt-desconto-4{
+    margin-left: 7px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+.produtos>.produto-4>.desconto-4>svg{
+    margin-left: 12px;
+    margin-top: -1px;
+    float: left;
+}
+.produtos>.produto-4>.unidades-4{
+    float: left;
+    margin-left: 7px;
+    border: 1px solid #FF6500;
+    border-radius: 3px;
+    height: 40px;
+    width: 40px;
+    font-size: 10px;
+}
+.produtos>.produto-4>.unidades-4>small{
+    float: left;
+    text-align: center;
+    margin-left: 5px;
+    height: 10px;
+    color: #FF6500;
+    font-weight: 500;
+}
+.produtos>.produto-4>.unidades-4>.small-2{
+    float: left;
+    text-align: center;
+    margin-left: 11px;
+    margin-top: 4px;
+    height: 10px;
+    color: #FF6500;
+    font-weight: 500;
+}
+.produtos>.produto-4>.unidades-4>span{
+    float: left;
+    text-align: center;
+    margin-left: 12px;
+    height: 10px;
+    color: #FF6500;
+    font-weight: bold;
+    font-size: 11px;
+}
+.produtos>.produto-4>.item-4>img{
+    float: left;
+    margin-left: 40px;
+    margin-top: 9px;
+    width: 131px;
+}
+.produtos>.produto-4>.item-4>.txt-produto-4{
+    float: left;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 7px;
+    margin-left: 15px;
+    width: 170px;
+    color: rgb(70, 70, 70);
+}
+.produtos>.produto-4>.item-4>.preço-de{
+    float: left;
+    color: rgba(70, 70, 70, 0.753);
+    margin-left: 15px;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+.produtos>.produto-4>.item-4>.preço-por{
+    float: left;
+    margin-left: 15px;
+    margin-right: 20px;
+    color: #FF6500;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+.produtos>.produto-4>.item-4>.pix{
+    float: left;
+    color: rgba(70, 70, 70, 0.753);
+    margin-left: 15px;
+    font-size: 12px;
+}
+.produtos>.produto-4>.botao-produtos{
+    float: left;
+    border: 1px solid #FF6500;
+    width: 227px;
+    height: 35px;
+    margin-top: 34px; 
+    border-radius: 3px;
+    background-color: white;
+}
+.produtos>.produto-4>.botao-produtos>.botao-relogio{
+    float: left;
+    margin-top: -1px;
+    margin-left: -7px;
+    background-color: #FF6500;
+    width: 66px;
+    height: 34px;
+    border-radius: 3px 0px 0px 3px;
+}
+.produtos>.produto-4>.botao-produtos>.botao-relogio>svg{
+    margin-top: 5px;
+}
+.produtos>.produto-4>.botao-produtos>small{
+    float: left;
+    color: #FF6500;
+    font-size: 9px;
+    margin-left: 31px;
+    margin-top: 5px;
 }
 .produtos>.produto-5{
     display: inline-block;
     margin-left: 11px;
-    border: 1px solid black;
     height: 58.5vh;
-    width: 18.9%;
+    width: 19%;
+}
+.produtos>.produto-5:hover{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.363);
+    border-radius: 3px;
+}
+.produtos>.produto-5>.desconto-5{
+    float: left;
+    margin-left: 7px;
+    border-radius: 3px;
+    background-color: #FF6500;
+    height: 40px;
+    width: 40px;
+}
+.produtos>.produto-5>.desconto-5>.txt-desconto-5{
+    margin-left: 7px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+.produtos>.produto-5>.desconto-5>svg{
+    margin-left: 12px;
+    margin-top: -1px;
+    float: left;
+}
+.produtos>.produto-5>.unidades-5{
+    float: left;
+    margin-left: 7px;
+    border: 1px solid #FF6500;
+    border-radius: 3px;
+    height: 40px;
+    width: 40px;
+    font-size: 10px;
+}
+.produtos>.produto-5>.unidades-5>small{
+    float: left;
+    text-align: center;
+    margin-left: 5px;
+    height: 10px;
+    color: #FF6500;
+    font-weight: 500;
+}
+.produtos>.produto-5>.unidades-5>.small-2{
+    float: left;
+    text-align: center;
+    margin-left: 11px;
+    margin-top: 4px;
+    height: 10px;
+    color: #FF6500;
+    font-weight: 500;
+}
+.produtos>.produto-5>.unidades-5>span{
+    float: left;
+    text-align: center;
+    margin-left: 12px;
+    height: 10px;
+    color: #FF6500;
+    font-weight: bold;
+    font-size: 11px;
+}
+.produtos>.produto-5>.item-5>img{
+    float: left;
+    margin-left: 40px;
+    margin-top: 9px;
+    width: 131px;
+}
+.produtos>.produto-5>.item-5>.txt-produto-5{
+    float: left;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 7px;
+    margin-left: 15px;
+    width: 170px;
+    color: rgb(70, 70, 70);
+}
+.produtos>.produto-5>.item-5>.preço-de{
+    float: left;
+    color: rgba(70, 70, 70, 0.753);
+    margin-left: 15px;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+.produtos>.produto-5>.item-5>.preço-por{
+    float: left;
+    margin-left: 15px;
+    margin-right: 20px;
+    color: #FF6500;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+.produtos>.produto-5>.item-5>.pix{
+    float: left;
+    color: rgba(70, 70, 70, 0.753);
+    margin-left: 15px;
+    font-size: 12px;
+}
+.produtos>.produto-5>.botao-produtos{
+    float: left;
+    border: 1px solid #FF6500;
+    width: 227px;
+    height: 35px;
+    margin-top: 34px; 
+    border-radius: 3px;
+    background-color: white;
+}
+.produtos>.produto-5>.botao-produtos>.botao-relogio{
+    float: left;
+    margin-top: -1px;
+    margin-left: -7px;
+    background-color: #FF6500;
+    width: 66px;
+    height: 34px;
+    border-radius: 3px 0px 0px 3px;
+}
+.produtos>.produto-5>.botao-produtos>.botao-relogio>svg{
+    margin-top: 5px;
+}
+.produtos>.produto-5>.botao-produtos>small{
+    float: left;
+    color: #FF6500;
+    font-size: 9px;
+    margin-left: 31px;
+    margin-top: 5px;
 }
